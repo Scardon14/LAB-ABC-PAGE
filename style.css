@@ -1,3 +1,13 @@
+:root {
+    --coral: #ff595e;
+    --dorado: #ffca3a;
+    --verde: #8ac926;
+    --azul: #1982c4;
+    --morado: #6a4c93;
+    --blanco: #ffffff;
+    --gris: #f2f2f2;
+}
+
 /*GABRIELA*/
 
 
@@ -5,6 +15,32 @@
 
 
 /*YESID*/
+.badge-counter {
+    font-size: 0.9rem;
+    padding: 0.5em 0.8em;
+}
+
+.navbar-paleta {
+    background-color: var(--gris);
+    border-bottom: 2px solid var(--azul);
+}
 
 
+.navbar-paleta .navbar-brand,
+.navbar-paleta .nav-link,
+.navbar-paleta .texto-contador {
+    color: var(--azul) !important;
+}
+
+
+.navbar-paleta .nav-link:hover {
+    opacity: 0.8;
+}
+
+.badge-contador {
+    background-color: var(--verde);
+    color: var(--blanco);
+    font-size: 0.95rem;
+    padding: 0.4em 0.8em;
+}
 /*YULIANA*/
