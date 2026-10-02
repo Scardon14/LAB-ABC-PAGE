@@ -22,6 +22,7 @@ function filtro(tipo){
             })
             break;
         case "consonante":
+            console.log("consonante");
             document.querySelectorAll(`[data-tipo="vocal"]`).forEach((vocal) => {
                 vocal.style.display = "none";
             })
