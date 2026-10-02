@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <<script src="script.js" defer>
+        </script>
 
 </head>
 
@@ -17,25 +18,45 @@
     <div class="container sticky-top">
         <nav class="navbar navbar-expand-lg navbar-paleta rounded-bottom px-3">
             <div class="container-fluid">
-            
+
                 <a class="navbar-brand fw-bold me-4" href="index.html">ABC Equipo 9</a>
-           
+
                 <div class="navbar-nav me-auto flex-row gap-3">
                     <a class="nav-link active fw-semibold" href="index.html">Inicio</a>
-                    <a class="nav-link fw-semibold" href="equipo.html">Equipo</a>
+                    <a class="nav-link fw-semibold" href="index.html#equipo">Equipo</a>
                 </div>
-
+                <!--
                 <div class="d-flex align-items-center gap-2 ms-auto">
                     <span class="texto-contador fw-semibold">Letras:</span>
                     <span id="id_contador" class="badge rounded-pill badge-contador">0</span>
+                </div>-->
+                <!-- BOTONES DE FILTRO -->
+                <div class="filtros">
+
+                    <button type="button" class="btn filtro-btn" onclick="filtro('vocal')">
+                        Vocales
+                    </button>
+
+                    <button type="button" class="btn filtro-btn" onclick="filtro('consonante')">
+                        Consonantes
+                    </button>
+
+                    <button type="button" class="btn filtro-btn" onclick="filtro('todos')">
+                        Todos
+                    </button>
+
                 </div>
 
             </div>
         </nav>
     </div>
- 
 
-  
+    <!--Botones
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary" onclick="filtro('vocal')"> Vocales </button>
+        <button type="button" class="btn btn-primary" onclick="filtro('consonante')"> Consonantes </button>
+        <button type="button" class="btn btn-primary" onclick="filtro('todos')"> Todos </button>
+    </div>-->
 
     <!--GABRIELA TARJETAS-->
     <main class="container py-5">
@@ -960,15 +981,7 @@
             </div>
         </section>
     </main>
-
-    <div class="btn-group" role="group" >
-        <button type="button" class="btn btn-primary" onclick="filtro('vocal')"> Vocales </button>
-        <button type="button" class="btn btn-primary" onclick="filtro('consonante')"> Consonantes </button>
-        <button type="button" class="btn btn-primary" onclick="filtro('todos')"> Todos </button>
-    </div>
-
-
-
+    <!--
     <div id="equipo" class="container">
 
         <h1 >Nuestro Equipo</h1> 
@@ -1007,13 +1020,146 @@
             </div>
         </div>
 
-    </div>
+    </div>-->
+    <section id="equipo" class="container py-5">
 
-    <script src="./script.js"></script>
+        <div class="text-center mb-5">
+
+            <h2 class="titulo-equipo">
+                Nuestro Equipo
+            </h2>
+
+            <p class="subtitulo-equipo">
+                Conoce a las personas que hicieron posible este proyecto.
+            </p>
+
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+            <!-- GABRIELA -->
+
+            <div class="col">
+
+                <div class="card equipo-card h-100">
+
+                    <div class="equipo-imagen">
+
+                        <img src="img/woman_7185896.png" alt="Gabriela Cardona">
+
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">
+                            Gabriela Cardona
+                        </h5>
+
+                        <p class="card-text">
+                            Desarrollo Frontend
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- JUAN -->
+
+            <div class="col">
+
+                <div class="card equipo-card h-100">
+
+                    <div class="equipo-imagen">
+
+                        <img src="img/man_7790136.png" alt="Juan Rodriguez">
+
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">
+                            Juan Rodriguez
+                        </h5>
+
+                        <p class="card-text">
+                            Desarrollo
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- YESID -->
+
+            <div class="col">
+
+                <div class="card equipo-card h-100">
+
+                    <div class="equipo-imagen">
+
+                        <img src="img/user_10551812.png" alt="Yesid Hernandez">
+
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">
+                            Yesid Hernandez
+                        </h5>
+
+                        <p class="card-text">
+                            Desarrollo
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- YULIANA -->
+
+            <div class="col">
+
+                <div class="card equipo-card h-100">
+
+                    <div class="equipo-imagen">
+
+                        <img src="img/girl_8734639.png" alt="Yuliana Quintero">
+
+                    </div>
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">
+                            Yuliana Quintero
+                        </h5>
+
+                        <p class="card-text">
+                            Desarrollo
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
 </body>
 
 
